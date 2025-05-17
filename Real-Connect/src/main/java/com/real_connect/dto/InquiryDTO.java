@@ -8,7 +8,8 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class InquiryDTO {
-    private Long interestId;
+   
+	private Long interestId;
     private Long propertyId;
     private Long clientId;
     private String clientName;

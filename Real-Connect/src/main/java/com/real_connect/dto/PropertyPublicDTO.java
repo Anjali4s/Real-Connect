@@ -5,7 +5,8 @@ import lombok.Data;
 
 @Data
 public class PropertyPublicDTO {
-    private String name;
+	private Long id;
+	private String name;
     private String location;
     private double price;
     private String type;

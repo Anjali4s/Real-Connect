@@ -18,6 +18,7 @@ import com.real_connect.repository.InquiryRepository;
 import com.real_connect.repository.PropertyRepository;
 import com.real_connect.repository.UserRepository;
 
+import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 
 @Service
@@ -52,7 +53,7 @@ public class ClientInterestService {
 
         interestRepository.save(interest);
     }
-
+    @Transactional
     public void removeSavedProperty(Long clientId, Long propertyId) {
         interestRepository.deleteByClient_UserIdAndProperty_Id(clientId, propertyId);
     }

@@ -7,6 +7,7 @@ public class PropertyMapper {
 
     public static PropertyPublicDTO toPublicDTO(Property property) {
         PropertyPublicDTO dto = new PropertyPublicDTO();
+        dto.setId(property.getId());
         dto.setName(property.getName());
         dto.setLocation(property.getLocation());
         dto.setPrice(property.getPrice());
